@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+$cc_darkgrey: #262626;
+$cc_grey: #262626;
+$cc_white: white;
+$cc_lightblue: #8CDEF8;
+$cc_darkblue: #4C9ED8;
+
+$phone-width: 550px;
+$tablet-width: 550px;
+
+// DEBUGGING HTML LAYOUT
+// * {
+//   background: #000 !important;
+//   color: #0f0 !important;
+//   outline: solid #f00 1px !important;
+// }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-scroll-behaviour: smooth;
+
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: $cc_darkgrey;
+  color: $cc_white;
+  line-height: 1.8em;
+
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 0.95em;
+}
+
+a.anchor {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+}
+
+a.link-highlight {
+  color: $cc_lightblue;
+  display: inline-block;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: $cc_lightblue;
+  font-weight: bold;
+}
+
+.container {
+  position: relative;
+}
+
+.content {
+  position: 1px solid red;
+
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  padding: 50px 50px;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.section {  
+  &:nth-child(odd) {
+    background-color: $cc_darkgrey;
+  }
+
+  &:nth-child(even) {
+    background-color: $cc_grey;
+  }
+}
+
+.white {
+  background-color: white !important;
+}
+
+a {
+  text-decoration: none;
+  color: $cc_white;
+
+  transition: color 0.2s;
+
+  &:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: white;
+    position: absolute;
+
+    transition: width 0.2s;
+  }
+
+  &:hover, &:active {
+    transition: color 0.2s;
+
+    &:after {
+      width: 30px;
+
+      transition: width 0.2s;
+    }
+  }
+}
+
+.btn {
+  &:after {
+    display: none;
+  }
+
+  padding: 7px 20px;
+  display: inline-block;
+
+  border-radius: 5px;
+  border: 3px solid $cc_white;
+  color: $cc_white;
+
+  background-color: rgba(255, 255, 255, 0);
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.2s;
+  }
+}
+
+/**
+/* Navigation
+/***/
+
+nav {
+  box-sizing: border-box;
+  background: linear-gradient(rgba(26, 26, 26, 0.75), rgba(26, 26, 26, 0.5), rgba(0, 0, 0, 0));
+  z-index: 1;
+  position: fixed;
+
+  right: 0;
+  padding-right: 100px;
+  top: 0;
+  padding-top: 20px;
+  width: 100vw;
+  text-align: right;
+
+  font-size: 0.8em;
+
+  height: 100px;
+
+  text-transform: uppercase;
+
+  #btn-contact {
+    font-weight: bold;
+    display: inline;
+    padding: 10px 30px;
+  }
+}
+
+@media screen and (max-width: $phone-width) {
+  nav {
+    padding-right: 50px;
+  }
+  #services-nav {
+    display: none;
+  }
+}
+
+nav > ul {
+  list-style: none;
+  padding-left: none;
+}
+
+nav ul > li {
+  vertical-align: top;
+  display: inline-block;
+  padding: 5px 0;
+
+  text-align: left;
+
+  width: 100px;
+}
+
+.li-header:hover {
+  font-weight: bold;
+}
+
+nav ul > li {
+
+  ul {
+    margin-top: 10px;
+    padding: 0;
+
+    overflow-y: hidden;
+    width: 200px;
+    height: 0;
+
+    transition: height 0.2s;
+
+    li {
+      text-align: left;
+      display: block;
+      padding: 5px 0;
+      width: 200px;
+    }
+  }
+}
+
+li:hover {
+  ul {
+    height: 200px;
+    font-weight: 400;
+    display: block;
+    padding: 0;
+    text-shadow: rgba(0, 0, 0, 0.5) 3px 3px 5px;
+
+    transition: height 0.5s;
+  }
+}
+
+.footer {
+  min-height: 275px;
+  background-color: #262626;
+
+  div {
+    padding-top: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+  }
+
+  img {
+    padding: 0 10px;
+    margin: 50px 0;
+    width: 80%;
+    max-width: 300px;
+    object-fit: contain;
+  }
+
+  ul {
+    font-size: 0.9em;
+    padding: 0 10px;
+    list-style: none;
+
+    li:first-child {
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+  }
+
+  #brands-li {
+    font-size: 1.4em;
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+
+    a:after {
+      height: 1px;
+    }
+
+    a:hover:after {
+      width: 10px;
+    }
+  }
+}
+
+#copyright {
+  background-color: #1b1b1b;
+  display: block;
+  height: 60px;
+
+  p {
+    padding: 15px 0;
+    margin: 0;
+    margin-left: 50px;
+
+    font-size: 0.8em;
+    color: #BDBDBD;
+
+    float: left;
+  }
+
+  #web-author {
+    float: right;
+    margin: 0;
+    margin-right: 100px;
+
+    @media screen and (max-width: $phone-width) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "SppraxWebsite",
+  "version": "1.0.0",
+  "description": "Website for spprax media home page",
+  "main": "index.js",
+  "repository": "git@github.com:Ray-F/spprax-home-new.git",
+  "author": "Raymond Feng <rf.raymondfeng@gmail.com>",
+  "license": "n/a",
+  "private": true,
+
+  "scripts": {
+    "start": "cd spprax-client && yarn run start"
+  }
+}
