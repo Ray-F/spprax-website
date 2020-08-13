@@ -19,7 +19,7 @@ class App extends Component {
       duration : 1000
     })
 
-    setTimeout(() => {AOS.refresh();}, 500);
+    setTimeout(() => {AOS.refresh();}, 3000);
   }
 
   render() {
