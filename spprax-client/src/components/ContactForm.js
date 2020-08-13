@@ -94,16 +94,17 @@ class ContactForm extends Component {
                 onChange={(e) => this.setState({phone: e.target.value})} value={this.state.phone}
               />
 
-              <p id='contact-prompt'>
-                * Required fields, <span style={promptStyle}>{this.state.promptStatus}</span>
-              </p>
-
               <textarea
                 id='input-proj-desc' name='text' rows='1' cols='1' placeholder='Describe your project... *'
                 onChange={(e) => this.setState({desc: e.target.value})} value={this.state.desc}
               ></textarea>
 
             </div>
+
+            <p id='contact-prompt'>
+              * Required fields, <span style={promptStyle}>{this.state.promptStatus}</span>
+            </p>
+
 
             <input className='btn' id='send-form' type='submit' tabIndex='0' value='Send' />
           </form>

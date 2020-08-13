@@ -370,7 +370,7 @@ li:hover {
     display: flex;
     flex-flow: column wrap;
 
-    height: 220px;
+    height: 210px;
 
     input {
       width: 30%;
@@ -387,15 +387,15 @@ li:hover {
       padding: 15px;
       margin: 6px 0;
       margin-right: 10px;
+      flex-grow: 1;
     }
 
     #input-proj-desc {
       width: 60%;
-      height: 138px;
+      -webkit-height: 160px;
       resize: none;
 
       line-height: 1.5em;
-      flex-shrink: 1;
     }
 
     @media screen and (max-width: $tablet-width) {
@@ -433,15 +433,15 @@ li:hover {
         order: 5;
       }
     }
+  }
 
-    p {
-      display: block;
-      font-size: 0.75em;
+  #contact-prompt {
+    display: block;
+    font-size: 0.75em;
 
-      padding: 0;
-      margin: 0;
-      color: #666;
-    }
+    padding: 0;
+    margin: 0;
+    color: #666;
   }
 
   #send-form {
