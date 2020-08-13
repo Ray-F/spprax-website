@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
 
 // Resources
@@ -68,25 +69,35 @@ class HomePage extends Component {
           </div>
 
           <ul className='image-break'>
-            <li>
-              <img src={serviceProfile} alt='profile-service' />
-              <h4>Profile</h4>
+            <li onClick={(e) => {window.location.href = './work/profile'}}>
+              <Link>
+                <img src={serviceProfile} alt='profile-service' />
+                <h4>Profile</h4>
+              </Link>
             </li>
-            <li>
-              <img src={serviceEvent} alt='corporate-service' />
-              <h4><br />Event</h4>
+            <li onClick={(e) => {window.location.href = './work/event'}}>
+              <Link>
+                <img src={serviceEvent} alt='corporate-service' />
+                <h4><br />Event</h4>
+              </Link>
             </li>
-            <li>
-              <img src={serviceCampaign} />
-              <h4><br />Campaign</h4>
+            <li onClick={(e) => {window.location.href = './work/campaign'}}>
+              <Link>
+                <img src={serviceCampaign} />
+                <h4><br />Campaign</h4>
+              </Link>
             </li>
-            <li>
-              <img src={serviceWedding} />
-              <h4><br />Wedding</h4>
+            <li onClick={(e) => {window.location.href = './work/wedding'}}>
+              <Link>
+                <img src={serviceWedding} />
+                <h4><br />Wedding</h4>
+              </Link>
             </li>
-            <li>
-              <img src={serviceOther}/>
-              <h4>Other</h4>
+            <li onClick={(e) => {window.location.href = './work/wedding'}}>
+              <Link>
+                <img src={serviceOther}/>
+                <h4>Other</h4>
+              </Link>
             </li>
           </ul>
         </div>
@@ -103,14 +114,12 @@ class HomePage extends Component {
               Or if you're looking for full coverage from photos, video production and a professional multi-camera livestream for your event, we can do that too!
               <br /><br />
               At the end of the day, we care about telling your story in the medium most suited for it.
-              No two projects we've worked on in the past have been the same and we always keep this in mind moving forward.
-              <b>All our packages</b> include a specialized planning and consultation session to make sure you're comfortable with the project's scope, and we're all on the same page on deliverables.
+              No two projects we've worked on in the past have been the same and we always keep this in mind moving forward. <b>All our packages</b> include
+              a specialized planning and consultation session to make sure you're comfortable with the project's scope, and we're all on the same page on deliverables.
             </p>
 
             <img id='pipeline-img' src={pipeline} />
           </div>
-
-
         </div>
 
         <div id='portfolio-cut' className='section'>

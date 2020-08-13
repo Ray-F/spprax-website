@@ -59,7 +59,8 @@ class Navigation extends Component {
       if (this.state.open) {
         phoneMenuCmpt = (
           <ul id='phone-menu'>
-            <li><a href='/work/profile'>Corporate Profiles</a></li>
+            <li><a href='/'><b>Home</b></a></li>
+            <li><a href='/work/profile'>Profiles</a></li>
             <li><a href='/work/event'>Event</a></li>
             <li><a href='/work/campaign'>Campaigns</a></li>
             <li><a href='/work/wedding'>Wedding</a></li>
