@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
 import HamburgerMenu from 'react-hamburger-menu';
+import showreelLogo from '../resources/logo.png';
+import {Link} from 'react-router-dom';
 
 class Navigation extends Component {
   constructor(props) {
@@ -29,7 +31,7 @@ class Navigation extends Component {
     this.setState({vWidth: window.innerWidth});
     console.log("Resized to", this.state.vWidth);
 
-    if (this.state.vWidth > 550) {
+    if (this.state.vWidth > 900) {
       this.setState({open:false})
     }
   }
@@ -39,7 +41,7 @@ class Navigation extends Component {
     let phoneMenuCmpt;
 
     // Phone size
-    if (this.state.vWidth <= 550) {
+    if (this.state.vWidth <= 900) {
       menuCmpt = (
         <li id='menu-btn'>
           <HamburgerMenu
@@ -78,6 +80,8 @@ class Navigation extends Component {
 
     return (
       <nav>
+        <img id='logo-nav' src={showreelLogo} onClick={(e) => {window.location.href='/'}}/>
+
         <ul>
           <li className='li-header' id='work-nav'><a href='/#work'>Our Work</a>
             <ul>

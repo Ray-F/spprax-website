@@ -8,7 +8,7 @@ $cc_lightblue: #8CDEF8;
 $cc_darkblue: #4C9ED8;
 
 $phone-width: 550px;
-$tablet-width: 550px;
+$tablet-width: 900px;
 
 // DEBUGGING HTML LAYOUT
 // * {
@@ -185,6 +185,22 @@ nav {
     display: inline;
     padding: 10px 30px;
   }
+
+  #logo-nav {
+    width: 200px;
+    float: left;
+    padding: 22px 0 0 30px;
+    opacity: 0.8;
+
+    cursor: pointer;
+
+    transition-duration: 0.2s;
+  }
+
+  #logo-nav:hover {
+    opacity: 1;
+    transition-duration: 0.2s;
+  }
 }
 
 nav > ul {
@@ -247,8 +263,7 @@ li:hover {
   display: none;
 }
 
-
-@media screen and (max-width: $phone-width) {
+@media screen and (max-width: $tablet-width) {
   nav {
     padding-right: 50px;
 
@@ -267,7 +282,7 @@ li:hover {
     #menu-btn {
       display: inline-block;
       width: 0;
-      padding: 0;
+      padding: 10px;
       margin: 0;
     }
   }
@@ -276,7 +291,7 @@ li:hover {
     display: block;
     text-align: right;
 
-    padding: 15px;
+    padding: 20px 20px;
     margin: 0;
     position: absolute;
     right: 20px;
