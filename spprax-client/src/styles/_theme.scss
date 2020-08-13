@@ -261,6 +261,8 @@ li:hover {
 
 .hide {
   opacity: 0 !important;
+  cursor: default !important;
+  
   transition-duration: 0.5s;
 }
 
