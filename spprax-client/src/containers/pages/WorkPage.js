@@ -5,12 +5,14 @@ import { Redirect } from 'react-router-dom';
 import Navigation from '../../components/Navigation.js';
 import Footer from '../../components/Footer.js';
 import VideoPlayer from '../../components/VideoPlayer.js';
+import Scroll from '../../components/Scroll.js';
 
 import profileSplash from '../../resources/services/profile-splash.JPG';
 import eventSplash from '../../resources/services/event-splash.JPG';
 import weddingSplash from '../../resources/services/wedding-splash.JPG';
 import otherSplash from '../../resources/services/other-splash.JPG';
 import campaignSplash from '../../resources/services/campaign-splash.JPG';
+
 
 
 class WorkPage extends Component {
@@ -267,7 +269,6 @@ class WorkPage extends Component {
               client: "YMCA Auckland",
               tagline: "NZ Fashion Week is the premiere fashion event for New Zealand.",
               roleDesc: "Client event videography for NZ Fashion Week's Walk The Line Show.",
-              credits: ["Lead Filmmaker"],
               videoItems: [
                 {
                   url: "https://player.vimeo.com/video/360076300",
@@ -773,6 +774,8 @@ class WorkPage extends Component {
             {/* <li id='photo-box-last'></li> */}
           </ul>
         </div>
+
+        <Scroll />
 
         <Footer />
       </div>

@@ -262,12 +262,34 @@ li:hover {
 .hide {
   opacity: 0 !important;
   cursor: default !important;
-  
+
   transition-duration: 0.5s;
 }
 
 #phone-menu {
   display: none;
+}
+
+#scroll-up-btn {
+  position: fixed;
+  color: $cc_darkgrey;
+  right: 50px;
+  bottom: 50px;
+
+  z-index: 2;
+
+  font-size: 3em;
+
+  opacity: 0.5;
+
+  transition-duration: 0.2s;
+}
+
+#scroll-up-btn:hover {
+  opacity: 1;
+  cursor: pointer;
+
+  transition-duration: 0.2s;
 }
 
 @media screen and (max-width: $tablet-width) {

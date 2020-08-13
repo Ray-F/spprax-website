@@ -62,7 +62,7 @@ class VideoPlayer extends Component {
           {this.props.videoItems.map((video, index) => {
             let dimensions = this.getWidthHeight(video.aspect);
             return (
-              <div className={'video-container ' + dimensions[2]}>
+              <div key={index} className={'video-container ' + dimensions[2]}>
                 <iframe
                   src={video.url}
                   width={dimensions[0]}
