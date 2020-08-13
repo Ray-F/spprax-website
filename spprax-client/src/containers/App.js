@@ -18,7 +18,10 @@ class App extends Component {
     AOS.init({
       duration : 1000
     })
+
+    setTimeout(() => {AOS.refresh();}, 500);
   }
+
   render() {
     return (
       <MainRouter />

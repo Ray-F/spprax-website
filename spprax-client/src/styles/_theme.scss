@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
 
 $cc_darkgrey: #262626;
-$cc_grey: #262626;
+$cc_grey: #303030;
+$cc_lightgrey: #C0C0C0;
 $cc_white: white;
 $cc_lightblue: #8CDEF8;
 $cc_darkblue: #4C9ED8;
@@ -69,18 +70,42 @@ h2 {
   top: 0;
 }
 
-.section {  
-  &:nth-child(odd) {
-    background-color: $cc_darkgrey;
+.section {
+  background-color: $cc_darkgrey;
+}
+
+.section-break {
+  overflow: hidden;
+
+  display: flex;
+  flex-flow: row wrap;
+
+  width: 100vw;
+  padding-top: 100px;
+  background: $cc_darkgrey;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 
-  &:nth-child(even) {
-    background-color: $cc_grey;
+  padding-bottom: 50px;
+
+  @media screen and (max-width: $phone-width) {
+    img {
+      width: 150%;
+    }
+    padding-bottom: 0;
   }
 }
 
 .white {
   background-color: white !important;
+}
+
+.grey {
+  background-color: $cc_grey !important;
 }
 
 a {
@@ -162,15 +187,6 @@ nav {
   }
 }
 
-@media screen and (max-width: $phone-width) {
-  nav {
-    padding-right: 50px;
-  }
-  #services-nav {
-    display: none;
-  }
-}
-
 nav > ul {
   list-style: none;
   padding-left: none;
@@ -223,6 +239,177 @@ li:hover {
   }
 }
 
+#menu-btn {
+  display: none;
+}
+
+#phone-menu {
+  display: none;
+}
+
+
+@media screen and (max-width: $phone-width) {
+  nav {
+    padding-right: 50px;
+
+    .btn-contact-container {
+      display: none;
+    }
+
+    #work-nav {
+      display: none;
+    }
+
+    #services-nav {
+      display: none;
+    }
+
+    #menu-btn {
+      display: inline-block;
+      width: 0;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  #phone-menu {
+    display: block;
+    text-align: right;
+
+    padding: 15px;
+    margin: 0;
+    position: absolute;
+    right: 20px;
+
+    background: rgba(26, 26, 26, 0.8);
+
+    li {
+      display: block;
+      text-align: right;
+      padding: 0;
+      margin: 0;
+      width: auto;
+
+      a {
+        display: block;
+        margin: 0;
+      }
+
+      a::after {
+        position: absolute;
+        right: 10px;
+      }
+
+      .btn {
+        margin-top: 20px;
+        padding: 5px 30px;
+        width: auto;
+      }
+    }
+  }
+}
+
+#contact {
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 40px 0 60px 0;
+
+  @media screen and (max-width: $tablet-width) {
+    height: auto;
+  }
+
+  @media screen and (max-width: $phone-width) {
+    height: auto;
+  }
+
+  #contact-form {
+    display: flex;
+    flex-flow: column wrap;
+
+    height: 220px;
+
+    input {
+      width: 30%;
+    }
+
+    input, textarea {
+      border: none;
+      outline: none;
+
+      background-color: #333333;
+      border-radius: 5px;
+
+      color: #F2F2F2;
+      padding: 15px;
+      margin: 6px 0;
+      margin-right: 10px;
+    }
+
+    #input-proj-desc {
+      width: 60%;
+      height: 138px;
+      resize: none;
+
+      line-height: 1.5em;
+      flex-shrink: 1;
+    }
+
+    @media screen and (max-width: $tablet-width) {
+      flex-flow: row wrap;
+      height: auto;
+
+      input {
+        width: 35%;
+        flex-grow: 1;
+      }
+
+      input[type='text'] {
+        order: 0;
+      }
+
+      input[type='email'] {
+        order: 2;
+      }
+
+      input[type='tel'] {
+        order: 1;
+      }
+
+      textarea {
+        width: 100%;
+        order: 3;
+      }
+
+      #input-proj-desc {
+        width: 100%;
+        height: 100px;
+      }
+
+      #contact-prompt {
+        order: 5;
+      }
+    }
+
+    p {
+      display: block;
+      font-size: 0.75em;
+
+      padding: 0;
+      margin: 0;
+      color: #666;
+    }
+  }
+
+  #send-form {
+    padding: 10px;
+    margin-top: 30px;
+    text-align: center;
+    width: 120px;
+
+    cursor: pointer;
+  }
+}
+
 .footer {
   min-height: 275px;
   background-color: #262626;
@@ -241,6 +428,14 @@ li:hover {
     width: 80%;
     max-width: 300px;
     object-fit: contain;
+  }
+
+  @media screen and (max-width: $phone-width) {
+    img {
+      margin: 25px 0;
+    }
+
+    padding-bottom: 40px;
   }
 
   ul {

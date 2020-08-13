@@ -20,10 +20,10 @@ class Footer extends Component {
             <li>
               MORE
             </li>
-            <li><a href='../../team'>The Team</a></li>
-            <li><a href='../../about'>About Us</a></li>
-            <li><a href='../../contact'>Contact</a></li>
-            <li><a href='../../terms-conditions'>Terms and Conditions</a></li>
+            <li><a href='/team'>The Team</a></li>
+            <li><a href='/about'>About Us</a></li>
+            <li><a href='/#contact'>Contact</a></li>
+            <li><a href='/terms-conditions'>Terms and Conditions</a></li>
           </ul>
 
           <ul>
@@ -54,7 +54,7 @@ class Footer extends Component {
       </div>
 
       <div id='copyright' className='section'>
-        <p>&copy; Spprax Media 2020. All rights reserved.</p>
+        <p>&copy; Spprax Media Limited 2020. All rights reserved.</p>
         <p id='web-author'>Website created in house.</p>
       </div>
 

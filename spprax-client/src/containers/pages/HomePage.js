@@ -5,14 +5,15 @@ import React, { Component } from 'react';
 import splashVideo from '../../resources/splash.png';
 import logoShowreel from '../../resources/logo_showreel.png';
 import serviceCampaign from '../../resources/services/campaign.JPG';
-import serviceCorporate from '../../resources/services/corporate.JPG';
+import serviceProfile from '../../resources/services/profile.JPG';
 import serviceEvent from '../../resources/services/event.JPG';
-import serviceFunction from '../../resources/services/function.JPG';
+import serviceOther from '../../resources/services/other.JPG';
 import serviceWedding from '../../resources/services/wedding.JPG';
 
 import photoCam from '../../resources/photo_cam.png';
 import videoCam from '../../resources/video_cam.png';
 import liveCam from '../../resources/live_cam.png';
+import pipeline from '../../resources/pipeline_logos.png';
 
 // Other Components
 import Navigation from '../../components/Navigation';
@@ -30,10 +31,10 @@ class HomePage extends Component {
 
         <div id='splash-video' className='section'>
           <div id='splash-pattern-fill'></div>
-          <img id='video-reel' src={splashVideo} />
+          <img id='video-reel' src={splashVideo} alt='video' />
 
           <div id='splash-title'>
-            <img data-aos='fade-in' id='logo-showreel' src={logoShowreel} width='400' />
+            <img data-aos='fade-in' id='logo-showreel' src={logoShowreel} width='400' alt='logo' />
             <h3 data-aos='fade-up'>PHOTOGRAPHY • VIDEO PRODUCTION • LIVE</h3>
           </div>
 
@@ -58,6 +59,7 @@ class HomePage extends Component {
         <Clients />
 
         <div id='sb-1' className='section-break'>
+          <a className='anchor' name='work'></a>
           <div className='content'>
             <h2>Main Service Areas</h2>
             <p>
@@ -67,11 +69,11 @@ class HomePage extends Component {
 
           <ul className='image-break'>
             <li>
-              <img src={serviceCorporate} />
-              <h4>Corporate</h4>
+              <img src={serviceProfile} alt='profile-service' />
+              <h4>Profile</h4>
             </li>
             <li>
-              <img src={serviceEvent} />
+              <img src={serviceEvent} alt='corporate-service' />
               <h4><br />Event</h4>
             </li>
             <li>
@@ -79,12 +81,12 @@ class HomePage extends Component {
               <h4><br />Campaign</h4>
             </li>
             <li>
-              <img src={serviceFunction}/>
-              <h4>Functions</h4>
-            </li>
-            <li>
               <img src={serviceWedding} />
               <h4><br />Wedding</h4>
+            </li>
+            <li>
+              <img src={serviceOther}/>
+              <h4>Other</h4>
             </li>
           </ul>
         </div>
@@ -104,12 +106,16 @@ class HomePage extends Component {
               No two projects we've worked on in the past have been the same and we always keep this in mind moving forward.
               <b>All our packages</b> include a specialized planning and consultation session to make sure you're comfortable with the project's scope, and we're all on the same page on deliverables.
             </p>
+
+            <img id='pipeline-img' src={pipeline} />
           </div>
+
+
         </div>
 
         <div id='portfolio-cut' className='section'>
           <p>
-            <a href='work'>View our Past Work ></a>
+            <a href='/#work'>View our Past Work ></a>
           </p>
         </div>
 
@@ -169,7 +175,7 @@ class HomePage extends Component {
 
         <div id='portfolio-cut-2' className='section'>
           <p>
-            <a href='work'>View our Past Work ></a>
+            <a href='/#work'>View our Past Work ></a>
           </p>
         </div>
 
