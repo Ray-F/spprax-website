@@ -10,15 +10,20 @@ class Navigation extends Component {
 
     this.state = {
       open: false,
-      vWidth: null
+      vWidth: null,
+      scrollY: null
     }
 
     this.handleResize = this.handleResize.bind(this);
+    this.handleScroll = this.handleScroll.bind(this);
   }
 
   componentDidMount() {
     window.addEventListener('resize', this.handleResize);
     this.setState({vWidth: window.innerWidth});
+
+    window.addEventListener('scroll', this.handleScroll);
+    this.setState({scrollY: window.scrollY});
   }
 
   handleClick() {
@@ -29,16 +34,41 @@ class Navigation extends Component {
 
   handleResize() {
     this.setState({vWidth: window.innerWidth});
-    console.log("Resized to", this.state.vWidth);
 
     if (this.state.vWidth > 900) {
       this.setState({open:false})
     }
   }
 
+  handleScroll() {
+    this.setState({scrollY: window.scrollY});
+  }
+
   render() {
     let menuCmpt;
     let phoneMenuCmpt;
+
+    let hideClass;
+    let logoCmpt;
+
+    if (this.state.scrollY < 100) {
+      hideClass = '';
+
+    } else {
+      hideClass = 'hide';
+      logoCmpt = (
+        <img
+          id='logo-nav'
+          src={showreelLogo}
+          className={hideClass}
+          onClick={(e) => {window.location.href='/'}}
+        />
+      );
+
+      setTimeout(() => {
+        logoCmpt = null;
+      }, 1000);
+    }
 
     // Phone size
     if (this.state.vWidth <= 900) {
@@ -80,7 +110,12 @@ class Navigation extends Component {
 
     return (
       <nav>
-        <img id='logo-nav' src={showreelLogo} onClick={(e) => {window.location.href='/'}}/>
+        <img
+          id='logo-nav'
+          src={showreelLogo}
+          className={hideClass}
+          onClick={(e) => {if (hideClass!=='hide') window.location.href='/'}}
+        />
 
         <ul>
           <li className='li-header' id='work-nav'><a href='/#work'>Our Work</a>

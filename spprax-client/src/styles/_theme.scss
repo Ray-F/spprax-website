@@ -259,6 +259,11 @@ li:hover {
   display: none;
 }
 
+.hide {
+  opacity: 0 !important;
+  transition-duration: 0.5s;
+}
+
 #phone-menu {
   display: none;
 }

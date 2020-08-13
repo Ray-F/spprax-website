@@ -67,6 +67,19 @@ $tablet-width: 900px;
 
       padding: 15px 40px;
     }
+
+    @media screen and (max-width: $phone-width) {
+      #video-reel {
+        height: 100vh;
+      }
+      #splash-title {
+        top: 42vh;
+      }
+
+      #btn-enquire {
+        bottom: 25vh;
+      }
+    }
   }
 
   #mission {
