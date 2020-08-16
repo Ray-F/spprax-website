@@ -2,34 +2,6 @@ $phone-width: 550px;
 $tablet-width: 900px;
 
 .page-work {
-  #splash {
-    height: 75vh;
-    width: 100vw;
-    background: rgba(0, 0, 0, 0);
-  }
-
-  .splash-photo {
-    width: 100vw;
-    height: 75vh;
-
-    object-fit: cover;
-    object-position: center;
-
-    position: fixed;
-    z-index: -1;
-  }
-
-  .splash-title {
-    position: absolute;
-    bottom: 25vh;
-    margin-bottom: 25px;
-    margin-left: 10%;
-
-    text-transform: uppercase;
-    font-size: 1.5em;
-    line-height: 2em;
-    text-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px;
-  }
 
   #crop-prompt {
     color: #262626;

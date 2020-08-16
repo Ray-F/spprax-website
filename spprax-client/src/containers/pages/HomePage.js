@@ -195,9 +195,8 @@ class HomePage extends Component {
               We love to be transparent and upfront about our pricing structure, however, most times we need to know some project details in order to provide you with a quote.
               It helps if you have a budget in mind as a starting point to work around, but a lot can influence the final cost and quality.
               <br /><br />
-              Regardless of what your budget is though, we probably will still be able to help put some options on the table for you. Below are some broad figures to give you an idea and when you're ready, we can chat.
-              <br /><br />
-              <i>(NOTE: Does not apply for weddings. For wedding-specific pricing, check out the weddings page <a className='link-highlight' href='work/wedding'>here</a>)</i>
+              Regardless of what your budget is though, we probably can still help put some options on the table for you.
+              We have serviced a wide range of client needs in the past, ranging from not-for-profit and small scale projects, to larger productions with large crew sizes as well.
             </p>
           </div>
         </div>
@@ -206,10 +205,10 @@ class HomePage extends Component {
           <div data-aos='fade-up' className='ind-budget'>
             <h2>Modest & NFP</h2>
 
-            <h4>Up to $3000</h4>
+            <h4>from $750</h4>
 
             <p>
-              Suitable for simple projects, or budget-tight NFP organisations. Final products are usually shorter, engaging and to the point.
+              Suitable for very simple projects, or budget-tight NFP organisations. Final products are usually shorter, engaging and to the point.
               They will get to the core of your message or event and showcase what you do in a succint fashion.
             </p>
           </div>
@@ -218,7 +217,7 @@ class HomePage extends Component {
             <div data-aos='fade-down'>
               <h2>Mainstream</h2>
 
-              <h4>$3000 – $6000</h4>
+              <h4>$ – $$</h4>
               <p>
                 Our most common option, and gives us a bit more time to plan out an awesome narrative around your passion and story.
                 You’ll get creative, memorable product(s) that engages your audience and builds vital emotional connections.
@@ -229,7 +228,7 @@ class HomePage extends Component {
           <div data-aos='fade-up' className='ind-budget'>
             <h2>Production Gold</h2>
 
-            <h4>$6000+ and over</h4>
+            <h4>$$$+</h4>
 
             <p>
               For the adventurous and those who need an idea that's truly new and exciting.

@@ -19,6 +19,7 @@ class MainRouter extends Component {
 
           <Route exact path={'/terms-conditions'} component={TermsConditionsPage} />
           <Route exact path={'/error404'} component={Error404} />
+
           <Route component={Error404} />
         </Switch>
       </BrowserRouter>
