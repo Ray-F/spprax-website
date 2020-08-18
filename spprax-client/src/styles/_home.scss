@@ -47,12 +47,20 @@ $tablet-width: 900px;
 
       @media screen and (max-width: $phone-width) {
         img {
-          width: 85vw;
-          // width: 350px;
+          max-width: 85vw;
+          width: 350px;
         }
 
         h3 {
-          font-size: 1.1em;
+          position: relative;
+
+          span {
+            position: relative;
+            display: inline-block;
+          }
+
+          display: block;
+          font-size: 1em;
         }
       }
     }

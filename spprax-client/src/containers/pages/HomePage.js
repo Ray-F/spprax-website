@@ -41,7 +41,7 @@ class HomePage extends Component {
 
           <div id='splash-title'>
             <img data-aos='fade-in' id='logo-showreel' src={logoShowreel} width='400' alt='logo' />
-            <h3 data-aos='fade-up'>PHOTOGRAPHY • VIDEO PRODUCTION • LIVE</h3>
+            <h3 data-aos='fade-up'><span>PHOTOGRAPHY • VIDEO</span> <span>PRODUCTION • LIVE</span></h3>
           </div>
 
           <a className='btn' id='btn-enquire' href='#contact'>ENQUIRE NOW</a>
