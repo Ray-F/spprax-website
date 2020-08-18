@@ -88,31 +88,31 @@ class HomePage extends Component {
           <ul className='image-break'>
             <li onClick={(e) => {window.location.href = './work/profile'}}>
               <a className='anchor' name='work'></a>
-              <Link>
+              <Link to=''>
                 <img src={serviceProfile} alt='profile-service' />
                 <h4>Profile</h4>
               </Link>
             </li>
             <li onClick={(e) => {window.location.href = './work/event'}}>
-              <Link>
+              <Link to=''>
                 <img src={serviceEvent} alt='corporate-service' />
                 <h4><br />Event</h4>
               </Link>
             </li>
             <li onClick={(e) => {window.location.href = './work/campaign'}}>
-              <Link>
+              <Link to=''>
                 <img src={serviceCampaign} />
                 <h4><br />Campaign</h4>
               </Link>
             </li>
             <li onClick={(e) => {window.location.href = './work/wedding'}}>
-              <Link>
+              <Link to=''>
                 <img src={serviceWedding} />
                 <h4><br />Wedding</h4>
               </Link>
             </li>
             <li onClick={(e) => {window.location.href = './work/wedding'}}>
-              <Link>
+              <Link to=''>
                 <img src={serviceOther}/>
                 <h4>Other</h4>
               </Link>
