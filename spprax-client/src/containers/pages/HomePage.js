@@ -52,10 +52,10 @@ class HomePage extends Component {
             <h2>Our Mission</h2>
             <p>
 
-              <div id='photo-container'>
+              {/* <div id='photo-container'>
                 <img id='director-photo' src={portrait} />
                 <h6><span>-</span><b>Raymond Feng</b><br />Managing Director</h6>
-              </div>
+              </div> */}
               We are a media production studio servicing both corporate and consumer clients through picture, film and live mediums.
               We help highlight the best of amazing events and stories through our experience, our passion, and our promise to deliver.
               <br /><br />
@@ -269,7 +269,7 @@ class HomePage extends Component {
           <div data-aos='fade-up' className='ind-budget'>
             <h2>Production Gold</h2>
 
-            <h4>$$$+</h4>
+            <h4>$5000+</h4>
 
             <p>
               For the adventurous and those who need an idea that's truly new and exciting.
