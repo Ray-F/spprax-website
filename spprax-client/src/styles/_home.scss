@@ -12,6 +12,7 @@ $tablet-width: 900px;
 
       object-fit: cover;
       overflow: hidden;
+      object-position: center center;
     }
 
     #splash-pattern-fill {
@@ -90,12 +91,59 @@ $tablet-width: 900px;
       font-size: 1em;
       line-height: 1.8em;
     }
+
+    #photo-container {
+      float: right;
+      padding-left: 50px;
+
+      @media screen and (max-width: $tablet-width) {
+        display: none;
+      }
+
+      #director-photo {
+        filter: grayscale(1);
+        width: 130px;
+        height: 130px;
+        border-radius: 10px;
+        text-align: right;
+        padding: 0;
+        margin: 0;
+
+        transition-duration: 0.2s;
+
+        &:hover {
+          filter: none;
+          transition-duration: 0.2s;
+        }
+      }
+
+      h6 {
+        span {
+          display: block;
+          margin-bottom: 10px;
+        }
+
+        line-height: 1.5em;
+        padding: 20px 0 0 0;
+        margin: 0;
+
+        text-align: right;
+        font-weight: 400;
+        font-size: 0.8em;
+      }
+    }
   }
 
   #clients {
     padding: 50px 0;
     background-color: #fff;
     text-align: center;
+
+    .content {
+      @media screen and (max-width: $phone-width) {
+        padding: 50px 15px;
+      }
+    }
 
     h2 {
       text-align: center;
@@ -121,8 +169,12 @@ $tablet-width: 900px;
 
           transition: 0.2s filter;
 
+          @media screen and (max-width: $tablet-width) {
+            padding: 15px 20px;
+          }
+
           @media screen and (max-width: $phone-width) {
-            width: 100px;
+            width: 95px;
             padding: 15px 10px;
           }
         }
@@ -272,7 +324,7 @@ $tablet-width: 900px;
   .service-forms {
     $cc_darkgrey: #262626;
     background-color: #FFFFFF;
-    height: 450px;
+    height: 550px;
     padding: 0;
 
     @media screen and (max-width: $phone-width) {
@@ -293,7 +345,8 @@ $tablet-width: 900px;
       height: inherit;
 
       @media screen and (max-width: $tablet-width) {
-        opacity: 0;
+
+        display: none;
         left: 20px;
       }
     }

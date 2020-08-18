@@ -3,13 +3,16 @@ import {Link} from 'react-router-dom';
 
 
 // Resources
-import splashVideo from '../../resources/splash.png';
+import splashVideo from '../../resources/splash_video.mp4';
 import logoShowreel from '../../resources/logo_showreel.png';
+import portrait from '../../resources/portrait_sml.JPG';
+
 import serviceCampaign from '../../resources/services/campaign.JPG';
 import serviceProfile from '../../resources/services/profile.JPG';
 import serviceEvent from '../../resources/services/event.JPG';
 import serviceOther from '../../resources/services/other.JPG';
 import serviceWedding from '../../resources/services/wedding.JPG';
+
 
 import photoCam from '../../resources/photo_cam.png';
 import videoCam from '../../resources/video_cam.png';
@@ -32,7 +35,9 @@ class HomePage extends Component {
 
         <div id='splash-video' className='section'>
           <div id='splash-pattern-fill'></div>
-          <img id='video-reel' src={splashVideo} alt='video' />
+          <video id='video-reel' muted loop autoPlay>
+            <source src={splashVideo} type='video/mp4' />
+          </video>
 
           <div id='splash-title'>
             <img data-aos='fade-in' id='logo-showreel' src={logoShowreel} width='400' alt='logo' />
@@ -44,32 +49,45 @@ class HomePage extends Component {
 
         <div id='mission' className='section'>
           <div className='content'>
-            <h2>One Mission</h2>
+            <h2>Our Mission</h2>
             <p>
-              We are a boutique content creation firm servicing corporate and consumer clients through both picture and film mediums.
+
+              <div id='photo-container'>
+                <img id='director-photo' src={portrait} />
+                <h6><span>-</span><b>Raymond Feng</b><br />Managing Director</h6>
+              </div>
+              We are a media production studio servicing both corporate and consumer clients through picture, film and live mediums.
               We help highlight the best of amazing events and stories through our experience, our passion, and our promise to deliver.
               <br /><br />
-              Our goal is to offer our clients the highest quality of photo, video production and live services possible given any budget.
+              Our goal is to offer our clients the highest quality of photo, video production and livestreaming services possible given any budget.
               We are dedicated in translating your passion into compelling photo and video content that delivers results.
-              <br /><br />
-              <span>–</span>
             </p>
+
           </div>
         </div>
 
         <Clients />
 
         <div id='sb-1' className='section-break'>
-          <a className='anchor' name='work'></a>
           <div className='content'>
             <h2>Main Service Areas</h2>
             <p>
-              We service a large selection of media productions, ranging from corporate profiles to wedding narratives across a broad range of budget options. Hover on each category type below to view our past work and experience in each area, or keep scrolling to find out more information about our services.
+              We service a large selection of media productions, ranging from corporate profiles
+              to wedding narratives working across a broad range of budgets.
+              Hover on each category type below to view our past work and
+              experience in each area, or keep scrolling to find out more information about our services.
+
+              <br /><br />
+              Just note that even if we don't list an exact match of what you're looking for, flick
+              us a quick message using the contact form. We are always looking for
+              new, exciting projects and changing up the game.
             </p>
           </div>
 
+
           <ul className='image-break'>
             <li onClick={(e) => {window.location.href = './work/profile'}}>
+              <a className='anchor' name='work'></a>
               <Link>
                 <img src={serviceProfile} alt='profile-service' />
                 <h4>Profile</h4>
@@ -104,18 +122,21 @@ class HomePage extends Component {
 
         <div id='pipeline' className='section'>
           <div className='content'>
-            <h2>Our Production Process</h2>
+            <h2>Our Production Workflow</h2>
 
             <p>
-              Unlike many other agencies or media content creators, we take a holistic approach to showcasing your passion or brand.
-              Instead of specializing in a type of content, we can cover any media aspect of most production categories that are listed above, and other more niche applications as well.
+              Unlike many other agencies or media content creators, we take a holistic
+              approach to showcasing your passion or brand.
+              Instead of specializing in any type of content, we have a solid network of people
+              that work across media disciplines. At the end, we can then bring things together for one cohesive picture.
               <br /><br />
-              This means if you're just interested in some awesome photography for your brand, we can do that.
-              Or if you're looking for full coverage from photos, video production and a professional multi-camera livestream for your event, we can do that too!
+              This means if you are just interested in some awesome photography for your brand, we can help.
+              Or if you're looking for full coverage from photos, video production and a professional
+              multi-camera livestream for your next big corporate event, we can help too!
               <br /><br />
               At the end of the day, we care about telling your story in the medium most suited for it.
-              No two projects we've worked on in the past have been the same and we always keep this in mind moving forward. <b>All our packages</b> include
-              a specialized planning and consultation session to make sure you're comfortable with the project's scope, and we're all on the same page on deliverables.
+              No two projects we've worked on in the past have been the same and we always keep this in mind moving forward. <i>All our packages</i> include
+              planning and consultation periods to make sure you're comfortable with the project's scope, and we're all on the same page on deliverables.
             </p>
 
             <img id='pipeline-img' src={pipeline} />
@@ -136,9 +157,16 @@ class HomePage extends Component {
           <div className='content'>
             <h2 data-aos='fade-right'>Specialized Photography</h2>
             <p data-aos='fade-right'>
-              At the heart of any content is having good visual features to accompany the story. Stand out above phone snaps to showcase who you are and what you do, without having to compromise on quality.
+              At the heart of any content is having good visual features to accompany the story.
+              Stand out above phone snaps to showcase who you are and what you do,
+              without having to compromise on quality.
               <br /><br />
-              We deliver on events, commercial profiles, portraiture, weddings among many, many other photographic artforms.
+              Photos, just like many other perishable goods diminish in quality over time.
+              Being constantly up to date and refreshing your website covers (just like your desktop wallpaper!)
+              is super important in staying relevant and appearing fresh. We can help preserve them for longer.
+              <br /><br />
+              We deliver on events, commercial profiles,
+              portraiture, weddings among many, many other photographic artforms.
             </p>
 
             <br />
@@ -157,7 +185,14 @@ class HomePage extends Component {
           <div className='content'>
             <h2 data-aos='fade-left'>Video Production</h2>
             <p data-aos='fade-left'>
-              With experience in a wide array of shooting styles – from documenting the ongoings of every event, to highlighting the most magical moments in an intimate wedding setting. Establish the mood and immerse your audience with story through cinematic level production.
+              Sometimes, photos themselves might not be enough to tell your story.
+              With experience in a wide array of shooting styles –
+              from documenting the ongoings of every event,
+              to highlighting the most magical moments in an intimate wedding setting.
+              Establish the mood and immerse your audience with story through cinematic level production.
+              <br /><br />
+              Through our framing and film skillset, we have seen our surpass
+              generic phone videos (with the same idea content), by over 150%.
               <br /><br />
               We deliver on event documentary, information campaigns, internal video memos and corporate interview setups.
             </p>
@@ -173,8 +208,14 @@ class HomePage extends Component {
             <a className='anchor' name='live'></a>
             <h2 data-aos='fade-right'>LIVE<span style={{color: "#D23535"}}>!</span> Content</h2>
             <p data-aos='fade-right'>
-              COVID-19 did and continues to pose a real threat to live events and audience engagement. Livestreaming straight to the web is a growing technology that greatly overcomes this barrier, and Spprax Media can help you take the first real step in running events that are broadcasted live to your audience, even overseas.
+              COVID-19 did and continues to pose a real threat to live events and audience engagement.
+              Livestreaming straight to the web is a growing technology that greatly overcomes this barrier,
+              and Spprax Media can help you take the first real step in running events that are
+              broadcasted live to your audience, even overseas.
               <br /><br />
+              Work with us to get your AGM's delivered to your remote members, your wedding to
+              overseas guests and product launches to reach a larger audience.
+              Get live engagement analytics and even recordings of your event to share them even further.
               Enquire now to learn how you can utilize this growing opportunity.
             </p>
             <br />
@@ -217,7 +258,7 @@ class HomePage extends Component {
             <div data-aos='fade-down'>
               <h2>Mainstream</h2>
 
-              <h4>$ – $$</h4>
+              <h4>$2000 – $5000</h4>
               <p>
                 Our most common option, and gives us a bit more time to plan out an awesome narrative around your passion and story.
                 You’ll get creative, memorable product(s) that engages your audience and builds vital emotional connections.

@@ -76,7 +76,7 @@ class ContactForm extends Component {
         <div className='content'>
           <h2>Obligation Free Chat</h2>
           <p>
-            (and coffee!) Let us figure out together what media option suites you best for your requirements and how to maximise your budget.
+            Let us figure out together (over a cup of coffee perhaps!) what media option suites you best for your requirements and how to maximise your budget.
           </p>
 
           <form id='contact-form-el' onSubmit={(e) => {e.preventDefault(); this.sendEmail(e.target)}} action='POST' >

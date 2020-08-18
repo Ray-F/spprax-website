@@ -223,18 +223,19 @@ class WorkPage extends Component {
             title: 'Profiles',
             splashUrl: profileSplash,
             description:
-              `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Aenean at est a felis rutrum varius vel at purus. Ut commodo,
-              lacus ut mattis vehicula, mauris nulla placerat nulla, vitae
-              tincidunt elit justo in justo. Aliquam sed libero mi.
-              Suspendisse potenti.
+              `Telling meaningful stories about a subject, whether that subject be
+              a person, a product or a place, is what we mean by a profile.
+
+              Spprax Media works to ensure that the profiles we help shape and create
+              can genuinely be called profiles – one's that tell their story just
+              by watching their short video, a collection of images, or through a livestream.
               <br /><br />
-              Donec id tellus sed ligula molestie viverra et id dui.
-              Sed vel tristique neque. Cras at ligula lacus.
-              Phasellus placerat maximus ultricies. Proin eu diam nisi.
-              Aenean vel iaculis velit, id venenatis diam. Duis ullamcorper odio
-              euismod justo mattis accumsan. Cras id ligula fermentum felis
-              scelerisque rutrum nec quis libero.`
+              In the past, we have worked with various brands telling stories about their talented people,
+              corporates about their unique culture, and organisations about their mission and what
+              makes them special.
+              <br /><br />
+              Work with us – tell your story the way you want it to be told.
+              `
           };
 
           break;
@@ -375,7 +376,18 @@ class WorkPage extends Component {
           this.state = {
             title: 'Event Coverage',
             splashUrl: eventSplash,
-            description: 'Somewhere else'
+            description:
+              `We love events! Events are fun, exciting, sometimes noisy but always full of new opportunities to
+              catch the candid moments of people just having a good time (something we think we're pretty good at, take a look below).
+              Videos and photos of your current events make a great foundation for future promotion, drawing larger crowds, even more laughs and perhaps even a larger budget!
+
+              <br /><br />
+
+              Even with events where you want to reach the largest audience possible, but are limited on space,
+              we can help keep the engagement up by moving your event online through a real-time livestream.
+              Events come in all shapes and sizes and we've got experience
+              across all sorts. Take a look below to see some of our past indoor and outdoor, small and large functions.
+              `
           }
 
           break;
@@ -420,9 +432,28 @@ class WorkPage extends Component {
           ]
 
           this.state = {
-            title: 'Wedding Coverage',
+            title: 'Live Weddings and Films',
             splashUrl: weddingSplash,
-            description: 'Wedding'
+            description:
+            `Weddings are some of the most special events we help with, and that's
+            why we have a special page dedicate to it. Weddings require the maximum levels
+            of care (and time management!) to capture the truly special moments,
+            along with all the details you may end up missing on your big day. Our experience with weddings
+            mean even if you do party a bit too hard, there will be an infinite number of replays where you can watch those special moments back.
+
+            <br /><br />
+
+            With our work, we specialise in unique and emotional wedding films that show the full spectrum
+            of emotions – allowing you to relive your moment.
+
+            <br /><br />
+            With COVID-19, we often come across some larger weddings where sometimes there are
+            important family members overseas who may miss out. This is why we also offer
+            wedding livestreaming packages along with our films, and sometimes at discounted rates to make sure guests don't miss out.
+
+            <br /><br />
+            Get in touch with us to see if we can arrange something special for you.
+            `
           }
 
           break;
@@ -541,9 +572,20 @@ class WorkPage extends Component {
           ];
 
           this.state = {
-            title: 'Other',
+            title: 'Narrative / Other',
             splashUrl: otherSplash,
-            description: 'Other stuff description'
+            description:
+              `
+              Just like with all websites with a limited portfolio space for sharing our creations, we had a
+              really hard time coming up with what to include.
+              On this page are some videos we really couldn't categorize, and
+              also some of our personal work (including narrative short films submitted to festivals).
+              <br /><br />
+              Although some of this might not be relevant to your project, we do always
+              try to add our own 'touch' that make them stand out, unique,
+              and sometimes borderline experimental. To do so, we often draw inspiration from our personal projects.
+              Have a look below, even just for a bit of entertainment.
+              `
           }
 
           break;
@@ -687,7 +729,18 @@ class WorkPage extends Component {
           this.state = {
             title: 'Campaigns',
             splashUrl: campaignSplash,
-            description: 'Campaigns'
+            description:
+            `Campaign videos are often the hardest to work with, and this is because for
+            a campaign to really be effective, it needs to above all else, stand out.
+            <br /><br />
+            After working our way through understanding what you're campaigning for, your needs and what you want to spotlight,
+            we create a custom blueprint for the upcoming project, incorporating unique aspects and twists that only enhance your vision.
+            The end result? (Hopefully) something really awesome.
+            <br /><br />
+            We've had a bunch of ideas in the past (with a few more always at the back of our minds).
+            If you're just like us and excited about creating something new, we look forward to hearing from you!
+            <br /><br />
+            `
           }
 
           break;
