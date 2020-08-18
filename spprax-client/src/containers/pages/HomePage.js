@@ -35,7 +35,7 @@ class HomePage extends Component {
 
         <div id='splash-video' className='section'>
           <div id='splash-pattern-fill'></div>
-          <video id='video-reel' muted loop autoPlay>
+          <video id='video-reel' muted loop autoPlay playsInline>
             <source src={splashVideo} type='video/mp4' />
           </video>
 
