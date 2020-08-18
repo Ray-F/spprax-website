@@ -258,7 +258,7 @@ class HomePage extends Component {
             <div data-aos='fade-down'>
               <h2>Mainstream</h2>
 
-              <h4>$2000 – $5000</h4>
+              <h4>$$</h4>
               <p>
                 Our most common option, and gives us a bit more time to plan out an awesome narrative around your passion and story.
                 You’ll get creative, memorable product(s) that engages your audience and builds vital emotional connections.
@@ -269,7 +269,7 @@ class HomePage extends Component {
           <div data-aos='fade-up' className='ind-budget'>
             <h2>Production Gold</h2>
 
-            <h4>$5000+</h4>
+            <h4>$$$</h4>
 
             <p>
               For the adventurous and those who need an idea that's truly new and exciting.
