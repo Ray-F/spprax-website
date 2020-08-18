@@ -31,7 +31,7 @@ class HomePage extends Component {
     return (
 
       <div className='container' id='page-home'>
-        <Navigation />
+        <Navigation noLogo={true} />
 
         <div id='splash-video' className='section'>
           <div id='splash-pattern-fill'></div>

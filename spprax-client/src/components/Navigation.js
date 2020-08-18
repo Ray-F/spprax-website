@@ -51,7 +51,7 @@ class Navigation extends Component {
     let hideClass;
     let logoCmpt;
 
-    if (this.state.scrollY < 100) {
+    if (this.state.scrollY < 100 && !this.props.noLogo) {
       hideClass = '';
 
     } else {

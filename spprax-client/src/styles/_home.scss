@@ -47,11 +47,12 @@ $tablet-width: 900px;
 
       @media screen and (max-width: $phone-width) {
         img {
-          width: 300px;
+          width: 85vw;
+          // width: 350px;
         }
 
         h3 {
-          font-size: 0.9em;
+          font-size: 1.1em;
         }
       }
     }
