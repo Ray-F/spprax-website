@@ -21,7 +21,7 @@ $tablet-width: 900px;
     padding: 50px 0 50px 0;
 
     @media screen and (max-width: $phone-width) {
-      padding: 1px;
+      padding: 1px 0;
     }
   }
 
@@ -129,6 +129,23 @@ $tablet-width: 900px;
 
       .a100 {
         padding-top: 100%;
+      }
+    }
+
+    &.video-stretch {
+      flex-flow: column;
+      margin: 50px auto;
+
+      .video-player-text {
+        box-sizing: border-box;
+        padding: 50px 25px 30px 25px;
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      .video-container-parent {
+        order: 2;
+        width: 100%;
       }
     }
 

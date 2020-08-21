@@ -45,8 +45,17 @@ class VideoPlayer extends Component {
       creditDom = null;
     }
 
+    let containerClasses = 'video-player-container';
+
+    if (
+      this.props.videoItems.length === 1
+      && ['a235'].includes(this.getWidthHeight(this.props.videoItems[0].aspect)[2])
+    ) {
+      containerClasses = 'video-player-container video-stretch';
+    }
+
     return (
-      <div className='video-player-container' data-aos='fade-up'>
+      <div className={containerClasses} data-aos='fade-up'>
         <div className='video-player-text'>
           <h4 className='text-title'>{this.props.title}</h4>
           {clientDom}
