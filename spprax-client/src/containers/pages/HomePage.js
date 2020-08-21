@@ -17,7 +17,6 @@ import serviceWedding from '../../resources/services/wedding.JPG';
 import photoCam from '../../resources/photo_cam.png';
 import videoCam from '../../resources/video_cam.png';
 import liveCam from '../../resources/live_cam.png';
-import pipeline from '../../resources/pipeline_logos.png';
 
 // Other Components
 import Navigation from '../../components/Navigation';
@@ -138,8 +137,6 @@ class HomePage extends Component {
               No two projects we've worked on in the past have been the same and we always keep this in mind moving forward. <i>All our packages</i> include
               planning and consultation periods to make sure you're comfortable with the project's scope, and we're all on the same page on deliverables.
             </p>
-
-            {/* <img id='pipeline-img' src={pipeline} /> */}
           </div>
         </div>
 
