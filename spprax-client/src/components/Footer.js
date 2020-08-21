@@ -53,7 +53,7 @@ class Footer extends Component {
       </div>
 
       <div id='copyright' className='section'>
-        <p>&copy; Spprax Media Limited 2020. All rights reserved.</p>
+        <p>&copy; Spprax Media Limited {new Date().getFullYear()}. All rights reserved.</p>
         <p id='web-author'>Website created in house.</p>
       </div>
 
