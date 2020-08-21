@@ -394,10 +394,31 @@ class WorkPage extends Component {
         case "wedding":
           videos = [
             {
+              id: "0067",
+              title: "Keren and Luke – Wedding Highlights",
+              roleDesc: "Maraetai Beach, Auckland. 14/03/2020.",
+              videoItems: [
+                {
+                  url: "https://player.vimeo.com/video/408731823",
+                  aspect: 2.35
+                }
+              ]
+            },
+            {
+              id: "0096",
+              title: "Karine and Eroni – Wedding Highlights",
+              roleDesc: "CBD Auckland and Sorrento in the Park. 17/07/2020.",
+              videoItems: [
+                {
+                  url: "https://player.vimeo.com/video/450061309",
+                  aspect: 2.35
+                }
+              ]
+            },
+            {
               id: "0040",
-              title: "Penelope and Florian's Wedding",
+              title: "Penelope and Florian – Preview",
               tagline: "Short highlights cut of Penelope and Florian's wedding on Kawau Island.",
-              credits: ["Lead Filmmaker"],
               videoItems: [
                 {
                   url: "https://player.vimeo.com/video/376321947",
@@ -405,18 +426,6 @@ class WorkPage extends Component {
                 }
               ]
             },
-            {
-              id: "0067",
-              title: "Keren and Luke – Wedding Highlights",
-              roleDesc: "Maraetai Beach, Auckland. 14/03/2020.",
-              credits: ["Lead Filmmaker"],
-              videoItems: [
-                {
-                  url: "https://player.vimeo.com/video/408731823",
-                  aspect: 2.35
-                }
-              ]
-            }
           ]
           folderUrls = [
             {
