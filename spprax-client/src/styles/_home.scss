@@ -4,6 +4,7 @@ $tablet-width: 900px;
 #page-home {
   #splash-video {
     position: relative;
+    height: 100vh;
     z-index: 0;
 
     #video-reel {
@@ -12,7 +13,7 @@ $tablet-width: 900px;
 
       object-fit: cover;
       overflow: hidden;
-      object-position: center center;
+      object-position: center;
     }
 
     #splash-pattern-fill {
@@ -20,11 +21,11 @@ $tablet-width: 900px;
 
       top: 0;
       left: 0;
-      bottom: 10px;
+      bottom: 0;
       right: 0;
 
       background: url('../resources/vid-pattern.png');
-      background-size: 8px;
+      background-size: 9px;
     }
 
     #splash-title {
@@ -93,9 +94,9 @@ $tablet-width: 900px;
   }
 
   #mission {
-    // background: url('../assets/vid-pattern.png');
-
+    background: linear-gradient(to bottom right, #1f1f1f, $cc_grey) !important;
     padding: 30px 0 50px 0;
+
     p {
       font-size: 1em;
       line-height: 1.8em;
@@ -273,29 +274,18 @@ $tablet-width: 900px;
   }
 
   #pipeline {
-    background-color: #FFFFFF;
+    background: #fff url('../resources/process.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    .content {
+      padding-bottom: 350px;
+    }
 
     h2, p {
       color: #262626;
     }
-
-    #pipeline-img {
-
-
-      width: 60%;
-      margin: 0 auto 50px auto;
-
-      display: block;
-
-      position: relative;
-      right: -10px;
-
-      @media screen and (max-width: $phone-width) {
-        width: 90%;
-        margin: 0 0 20px 0;
-      }
-    }
-
   }
 
   #budget {
@@ -419,5 +409,9 @@ $tablet-width: 900px;
     a:after, a:hover:after {
       background-color: #262626;
     }
+  }
+
+  .h2-icon {
+    margin-right: 8px;
   }
 }

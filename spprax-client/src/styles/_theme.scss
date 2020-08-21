@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
 
 $cc_darkgrey: #262626;
-$cc_grey: #303030;
+$cc_grey: #363636;
 $cc_lightgrey: #C0C0C0;
 $cc_white: white;
 $cc_lightblue: #8CDEF8;
-$cc_darkblue: #4C9ED8;
 
 $phone-width: 550px;
 $tablet-width: 900px;
@@ -70,7 +69,7 @@ h2 {
 }
 
 .section {
-  background-color: $cc_darkgrey;
+  background: $cc_darkgrey;
 }
 
 .section-break {

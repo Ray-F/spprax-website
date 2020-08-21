@@ -49,7 +49,7 @@ class HomePage extends Component {
 
         <div id='mission' className='section'>
           <div className='content'>
-            <h2>Our Mission</h2>
+            <h2><i class="fas fa-video h2-icon"></i> Our Mission</h2>
             <p>
 
               {/* <div id='photo-container'>
@@ -70,7 +70,7 @@ class HomePage extends Component {
 
         <div id='sb-1' className='section-break'>
           <div className='content'>
-            <h2>Main Service Areas</h2>
+            <h2><i class="fas fa-photo-video h2-icon"></i>Main Service Areas</h2>
             <p>
               We service a large selection of media productions, ranging from corporate profiles
               to wedding narratives working across a broad range of budgets.
@@ -122,7 +122,7 @@ class HomePage extends Component {
 
         <div id='pipeline' className='section'>
           <div className='content'>
-            <h2>Our Production Workflow</h2>
+            <h2><i class="fas fa-calendar-week h2-icon"></i> Our Production Workflow</h2>
 
             <p>
               Unlike many other agencies or media content creators, we take a holistic
@@ -139,7 +139,7 @@ class HomePage extends Component {
               planning and consultation periods to make sure you're comfortable with the project's scope, and we're all on the same page on deliverables.
             </p>
 
-            <img id='pipeline-img' src={pipeline} />
+            {/* <img id='pipeline-img' src={pipeline} /> */}
           </div>
         </div>
 
@@ -155,7 +155,7 @@ class HomePage extends Component {
           <img data-aos='fade-left' id='photo-bg' src={photoCam} />
 
           <div className='content'>
-            <h2 data-aos='fade-right'>Specialized Photography</h2>
+            <h2 data-aos='fade-right'>Photography</h2>
             <p data-aos='fade-right'>
               At the heart of any content is having good visual features to accompany the story.
               Stand out above phone snaps to showcase who you are and what you do,
@@ -206,7 +206,7 @@ class HomePage extends Component {
 
           <div className='content'>
             <a className='anchor' name='live'></a>
-            <h2 data-aos='fade-right'>LIVE<span style={{color: "#D23535"}}>!</span> Content</h2>
+            <h2 data-aos='fade-right'>LIVE<span style={{color: "#D23535"}}>!</span></h2>
             <p data-aos='fade-right'>
               COVID-19 did and continues to pose a real threat to live events and audience engagement.
               Livestreaming straight to the web is a growing technology that greatly overcomes this barrier,
@@ -233,7 +233,7 @@ class HomePage extends Component {
           <div className='content'>
             <h2>Our Pricing</h2>
             <p>
-              We love to be transparent and upfront about our pricing structure, however, most times we need to know some project details in order to provide you with a quote.
+              We like to be transparent and upfront about our pricing structure, however, most times we need to know some project details in order to provide you with a quote.
               It helps if you have a budget in mind as a starting point to work around, but a lot can influence the final cost and quality.
               <br /><br />
               Regardless of what your budget is though, we probably can still help put some options on the table for you.
