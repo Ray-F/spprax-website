@@ -100,7 +100,9 @@ class TermsConditionsPage extends Component {
                 <p>
                   <b>4. Other Terms</b>
                   <br />
-                    All terms are listed in conjunction with terms prepared and specified in each quotation and invoice sent per project basis.
+                  All terms are listed in conjunction with terms prepared and specified in each quotation and invoice sent per project basis.
+                  <br /><br />
+                  Unless otherwise stated on the invoice, the normal delivery timeframe for end photography products is 14 days. For video production, this can be up to a month.
                 </p>
               </div>
             </div>
