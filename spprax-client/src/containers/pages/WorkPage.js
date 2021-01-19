@@ -69,6 +69,42 @@ class WorkPage extends Component {
               ]
             },
             {
+              id: "SP-0004",
+              title: "Orchestral Performances",
+              client: "St Kentigern College",
+              tagline:
+                `Series of profiles for St Kentigern College's orchestral ensembles. Some of these were entered for the 2020 KBB High School Competition.`,
+              credits: ["Creative Director"],
+              videoItems: [
+                {
+                  url: "https://player.vimeo.com/video/462291416",
+                  aspect: 1.78
+                },
+                {
+                  url: "https://player.vimeo.com/video/462281956",
+                  aspect: 1.78
+                },
+                {
+                  url: "https://player.vimeo.com/video/462282524",
+                  aspect: 1.78
+                }
+              ]
+            },
+            {
+              id: "SP-0001",
+              title: "Ballerina Feature",
+              client: "Talosia Design",
+              tagline:
+                `Fashion profile video for Talosia.`,
+              credits: ["Creative Director"],
+              videoItems: [
+                {
+                  url: "https://player.vimeo.com/video/490291564",
+                  aspect: 1.96
+                }
+              ]
+            },
+            {
               id: "0084",
               title: "Seniors Engagement Event",
               client: "Te Pou Theatre • Roskill Together",
@@ -135,40 +171,6 @@ class WorkPage extends Component {
                 }
               ]
             },
-            {
-              id: "RU-INDUCTION",
-              title: 'Induction Videos',
-              client: 'Raise Up',
-              tagline: 'Client project for the Raise Up crew, introducing their current team and what their roles are within that team.',
-              credits: ["Videographer"],
-              videoItems: [
-                {
-                  url: "https://player.vimeo.com/video/345412822",
-                  aspect: 1.78
-                },
-                {
-                  url: "https://player.vimeo.com/video/345416750",
-                  aspect: 1.78
-                }
-              ]
-            },
-            {
-              id: "PYB2018INTRO",
-              title: 'Team Introductions',
-              client: 'Puketāpapa Youth Board',
-              tagline: 'The Puketāpapa Youth Board is a youth organisation that aims to advocate, uplift and empower the youth within their local board community.',
-              credits: ["Videographer"],
-              videoItems: [
-                {
-                  url: "https://player.vimeo.com/video/345411868",
-                  aspect: 2.00
-                },
-                {
-                  url: "https://player.vimeo.com/video/290024111",
-                  aspect: 1.78
-                }
-              ]
-            }
           ]
 
           folderUrls = [
@@ -242,6 +244,41 @@ class WorkPage extends Component {
         case "event":
           videos = [
             {
+              id: "SP-0011",
+              title: "\"FLAMBOYANCE\" – Town Hall",
+              client: "Auckland Youth Orchestra",
+              tagline:
+                `Video highlights for Auckland Youth Orchestra's 2020 finale performance at the Auckland Town Hall.`,
+              credits: ["Creative Director"],
+              videoItems: [
+                {
+                  url: "https://player.vimeo.com/video/497531564",
+                  aspect: 1.78
+                },
+                {
+                  url: "https://player.vimeo.com/video/497531268",
+                  aspect: 1.78
+                }
+              ]
+            },
+            {
+              id: "SP-0014",
+              title: "Ethnic Showcase",
+              client: "Auckland Council • Whau Local Board",
+              tagline: "Video highlights for Whau local board's ethnic showcase event in New Lynn, Auckland.",
+              credits: ["Creative Director"],
+              videoItems: [
+                {
+                  url: "https://player.vimeo.com/video/474634814",
+                  aspect: 1.96
+                },
+                {
+                  url: "https://player.vimeo.com/video/482228213",
+                  aspect: 1.96
+                },
+              ]
+            },
+            {
               id: "RCR",
               title: "Roskill Climate Restart, 2019",
               client: "Michael Wood MP",
@@ -276,35 +313,9 @@ class WorkPage extends Component {
                   aspect: 1.96
                 }
               ]
-            },
-            {
-              id: "LCEVENT",
-              title: 'Lynfield College Event Series',
-              client: "Lynfield College",
-              tagline:
-                `Event doc's of my old high school, Lynfield College. Having some experience with video shooting,
-                I decided to help out with various events, documenting ongoings.`,
-              credits: ["Videographer"],
-              videoItems: [
-                {
-                  url: "https://player.vimeo.com/video/345424438",
-                  aspect: 1.78
-                },
-                {
-                  url: "https://player.vimeo.com/video/283336175",
-                  aspect: 1.78
-                },
-                {
-                  url: "https://player.vimeo.com/video/256270475",
-                  aspect: 1.78
-                },
-                {
-                  url: "https://player.vimeo.com/video/316987245",
-                  aspect: 1.78
-                }
-              ]
             }
           ]
+
           folderUrls = [
             {
               folderUrl: '0063-strongman',
@@ -452,7 +463,7 @@ class WorkPage extends Component {
           ]
 
           this.state = {
-            title: 'Live Weddings and Films',
+            title: 'Wedding Films',
             splashUrl: weddingSplash,
             description:
             `Weddings are some of the most special events we help with, and that's
@@ -613,6 +624,18 @@ class WorkPage extends Component {
         case "campaign":
 
           videos = [
+            {
+              title: '"Fashion for Charity" Launch',
+              client: 'Fashion for Charity',
+              tagline: "Launch video to promote a charity fashion event supporting the Mental Health Foundation. Featuring Miss Universe New Zealand 2019 Diamond Langi among other NZ public figures.",
+              credits: [],
+              videoItems: [
+                {
+                  url: "https://player.vimeo.com/video/477002774",
+                  aspect: 1.96
+                }
+              ]
+            },
             {
               title: '"Youth Voices of Auckland" – Mayoralty Campaign 2019',
               client: 'Recruit Your Mayor Steering Group',
