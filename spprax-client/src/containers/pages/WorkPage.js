@@ -394,9 +394,20 @@ class WorkPage extends Component {
         case "wedding":
           videos = [
             {
+              id: "0068",
+              title: "Renee and Zack",
+              tagline: "Wedding film for Renee and Zack at Porongia Pines, Hamilton. 23/10/2020.",
+              videoItems: [
+                {
+                  url: "https://player.vimeo.com/video/494457105",
+                  aspect: 2.35
+                }
+              ]
+            },
+            {
               id: "0067",
-              title: "Keren and Luke – Wedding Highlights",
-              roleDesc: "Maraetai Beach, Auckland. 14/03/2020.",
+              title: "Keren and Luke",
+              roleDesc: "Wedding film for Keren and Luke at Maraetai Beach, Auckland. 14/03/2020.",
               videoItems: [
                 {
                   url: "https://player.vimeo.com/video/408731823",
@@ -406,8 +417,8 @@ class WorkPage extends Component {
             },
             {
               id: "0096",
-              title: "Karine and Eroni – Wedding Highlights",
-              roleDesc: "CBD Auckland and Sorrento in the Park. 17/07/2020.",
+              title: "Karine and Eroni",
+              roleDesc: "Wedding film for Karine and Eroni at Sorrento in the Park, Auckland. 17/07/2020.",
               videoItems: [
                 {
                   url: "https://player.vimeo.com/video/450061309",
@@ -416,12 +427,12 @@ class WorkPage extends Component {
               ]
             },
             {
-              id: "0040",
-              title: "Penelope and Florian – Preview",
-              tagline: "Short highlights cut of Penelope and Florian's wedding on Kawau Island.",
+              id: "0100",
+              title: "Amberley and Denis",
+              tagline: "Wedding film for Amberley and Denis at Woodside Estate, Hamilton. 14/11/2020.",
               videoItems: [
                 {
-                  url: "https://player.vimeo.com/video/376321947",
+                  url: "https://player.vimeo.com/video/496366597",
                   aspect: 2.35
                 }
               ]
