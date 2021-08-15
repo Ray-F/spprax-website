@@ -33,7 +33,7 @@ class Footer extends Component {
               <a href='tel:64021890788'>021 890 788</a>
             </li>
             <li>
-              <a href='mailto:raymond@spprax.co.nz'>raymond@spprax.co.nz</a>
+              <a href='mailto:hello@spprax.co.nz'>hello@spprax.co.nz</a>
             </li>
           </ul>
 
@@ -45,7 +45,7 @@ class Footer extends Component {
               <a href='https://www.facebook.com/spprax/'><i className='fab fa-facebook'></i></a>
               <a href='https://www.instagram.com/sppraxmedia/'><i className='fab fa-instagram'></i></a>
               <a href='https://vimeo.com/sppraxmedia/'><i className='fab fa-vimeo'></i></a>
-              <a href='mailto:raymond@spprax.co.nz'><i className='fas fa-envelope'></i></a>
+              <a href='mailto:hello@spprax.co.nz'><i className='fas fa-envelope'></i></a>
             </li>
           </ul>
         </div>
