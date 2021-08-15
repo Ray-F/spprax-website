@@ -30,9 +30,6 @@ class Footer extends Component {
               GET IN TOUCH
             </li>
             <li>
-              <a href='tel:64021890788'>021 890 788</a>
-            </li>
-            <li>
               <a href='mailto:hello@spprax.co.nz'>hello@spprax.co.nz</a>
             </li>
           </ul>
