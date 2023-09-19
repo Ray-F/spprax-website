@@ -96,7 +96,6 @@ class Navigation extends Component {
             <li><a href='/work/event'>Event</a></li>
             <li><a href='/work/campaign'>Campaigns</a></li>
             <li><a href='/work/wedding'>Wedding</a></li>
-            <li><a href='/work/other'>Narrative/Other</a></li>
             <li><a className='btn' id='btn-contact' href='/#contact'>Contact</a></li>
           </ul>
         );
@@ -124,7 +123,6 @@ class Navigation extends Component {
               <li><a href='/work/event'>Event</a></li>
               <li><a href='/work/campaign'>Campaigns</a></li>
               <li><a href='/work/wedding'>Wedding</a></li>
-              <li><a href='/work/other'>Narrative/Other</a></li>
             </ul>
           </li>
 

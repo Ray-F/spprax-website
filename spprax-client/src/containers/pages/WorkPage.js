@@ -10,7 +10,6 @@ import Scroll from '../../components/Scroll.js';
 import profileSplash from '../../resources/services/profile-splash.JPG';
 import eventSplash from '../../resources/services/event-splash.JPG';
 import weddingSplash from '../../resources/services/wedding-splash.JPG';
-import otherSplash from '../../resources/services/other-splash.JPG';
 import campaignSplash from '../../resources/services/campaign-splash.JPG';
 
 
@@ -29,7 +28,7 @@ class WorkPage extends Component {
     // Check what sort of work happens here
     const queryParam = this.props.match.params.workType;
 
-    let folderUrls;
+    let folderUrl;
     let videos;
 
     if (queryParam) {
@@ -106,7 +105,7 @@ class WorkPage extends Component {
             },
             {
               id: "0084",
-              title: "Seniors Engagement Event",
+              title: "Seniors Engagement",
               client: "Te Pou Theatre • Roskill Together",
               tagline:
                 `After the first wave of COVID-19, Roskill Together wanted to engage some of the
@@ -144,19 +143,6 @@ class WorkPage extends Component {
               ]
             },
             {
-              id: "PRIMITIVE",
-              title: 'PRIMITIVE – MUSIC VIDEO',
-              client: 'Silvera Band',
-              tagline: 'Client music video for the band Silvera, for the release of their track "Primitive".',
-              credits: ["Lead Filmmaker"],
-              videoItems: [
-                {
-                  url: "https://player.vimeo.com/video/327413214",
-                  aspect: 1.78
-                }
-              ]
-            },
-            {
               id: "0046",
               title: "Transport Accessibility",
               client: "Auckland Council",
@@ -173,53 +159,10 @@ class WorkPage extends Component {
             },
           ]
 
-          folderUrls = [
-            {
-              folderUrl: '0053-foodstuffs-office',
-              imgUrlHeader: 'foodstuffs-office',
-              size: 8,
-            },
-            {
-              folderUrl: '0048-airsorted',
-              imgUrlHeader: 'airsorted',
-              size: 5,
-            },
-            {
-              folderUrl: '0053-newworld-paknsave',
-              imgUrlHeader: 'foodstuffs',
-              size: 11,
-            },
-            {
-              folderUrl: 'OTHER-interior',
-              imgUrlHeader: 'interior',
-              size: 2,
-            },
-            {
-              folderUrl: 'OTHER-models/emma',
-              imgUrlHeader: 'emma',
-              size: 3
-            },
-            {
-              folderUrl: 'OTHER-models/julz',
-              imgUrlHeader: 'julz-talent',
-              size: 3
-            },
-            {
-              folderUrl: 'OTHER-models/matt',
-              imgUrlHeader: 'matt-talent',
-              size: 3
-            },
-            {
-              folderUrl: '0058-sasha',
-              imgUrlHeader: 'sasha',
-              size: 11,
-            },
-            {
-              folderUrl: 'LC-festivalawards',
-              imgUrlHeader: '2019faewall',
-              size: 7
-            }
-          ];
+          folderUrl = {
+            path: 'profile',
+            count: 12,
+          };
 
           this.state = {
             title: 'Profiles',
@@ -244,19 +187,13 @@ class WorkPage extends Component {
         case "event":
           videos = [
             {
-              id: "SP-0011",
-              title: "\"FLAMBOYANCE\" – Town Hall",
-              client: "Auckland Youth Orchestra",
-              tagline:
-                `Video highlights for Auckland Youth Orchestra's 2020 finale performance at the Auckland Town Hall.`,
-              credits: ["Creative Director"],
+              id: "SomeID",
+              title: "Music Gala Performance",
+              client: "Saint Kentigern College",
+              tagline: "Saint Kentigern College have their students perform a concert at the Holy Trinity Cathedral, Auckland.",
               videoItems: [
                 {
-                  url: "https://player.vimeo.com/video/497531564",
-                  aspect: 1.78
-                },
-                {
-                  url: "https://player.vimeo.com/video/497531268",
+                  url: "https://player.vimeo.com/video/853962522",
                   aspect: 1.78
                 }
               ]
@@ -279,31 +216,26 @@ class WorkPage extends Component {
               ]
             },
             {
-              id: "RCR",
-              title: "Roskill Climate Restart, 2019",
-              client: "Michael Wood MP",
+              id: "SP-0011",
+              title: "\"FLAMBOYANCE\" – Town Hall",
+              client: "Auckland Youth Orchestra",
               tagline:
-                `Roskill Climate Restart was a local initiative to discuss the implications and
-                actions regarding Climate Change and the local Roskill community.`,
-              roleDesc:
-                `This project was split into two videos – one of the full-length discussion hui
-                and the other a shorter, social-media friendly 'highlights cut'.`,
-              credits: ["Videographer"],
-
+                `Video highlights for Auckland Youth Orchestra's 2020 finale performance at the Auckland Town Hall.`,
+              credits: ["Creative Director"],
               videoItems: [
                 {
-                  url: "https://player.vimeo.com/video/355803844",
+                  url: "https://player.vimeo.com/video/497531564",
                   aspect: 1.78
                 },
                 {
-                  url: "https://player.vimeo.com/video/355897843",
+                  url: "https://player.vimeo.com/video/497531268",
                   aspect: 1.78
                 }
               ]
             },
             {
               id: "0049",
-              title: "Walk The Line – NZFW 2019",
+              title: "Walk The Line – NZFW",
               client: "YMCA Auckland",
               tagline: "NZ Fashion Week is the premiere fashion event for New Zealand.",
               roleDesc: "Client event videography for NZ Fashion Week's Walk The Line Show.",
@@ -316,73 +248,10 @@ class WorkPage extends Component {
             }
           ]
 
-          folderUrls = [
-            {
-              folderUrl: '0063-strongman',
-              imgUrlHeader: '0063-strongman',
-              size: 9
-            },
-            {
-              folderUrl: '0065-youthfest',
-              imgUrlHeader: '0065-2020youthfest',
-              size: 15
-            },
-            {
-              folderUrl: 'WDCC-hackathon',
-              imgUrlHeader: 'WDCCxHackathon-',
-              size: 9
-            },
-            {
-              folderUrl: 'WLB',
-              imgUrlHeader: 'WLB-',
-              size: 11
-            },
-            {
-              folderUrl: 'PYB-youthawards',
-              imgUrlHeader: '2019youthawards',
-              size: 15
-            },
-            {
-              folderUrl: 'PYB-summit-19',
-              imgUrlHeader: 'summit19-',
-              size: 13
-            },
-            {
-              folderUrl: 'DEB-seasonals',
-              imgUrlHeader: 'debating',
-              size: 9
-            },
-            {
-              folderUrl: 'LC-jazz',
-              imgUrlHeader: 'jazz',
-              size: 3
-            },
-            {
-              folderUrl: 'ManuAuteKiteDay',
-              imgUrlHeader: 'ManuAuteKiteDay-',
-              size: 10
-            },
-            {
-              folderUrl: 'PYB-summit',
-              imgUrlHeader: 'summit',
-              size: 7
-            },
-            {
-              folderUrl: '0076-GBHQ',
-              imgUrlHeader: '0076-GBHQ-',
-              size: 14,
-            },
-            {
-              folderUrl: '0049-wtlraiseup',
-              imgUrlHeader: 'wtlraiseup',
-              size: 14
-            },
-            {
-              folderUrl: '0033-snowball',
-              imgUrlHeader: 'snowball',
-              size: 11
-            }
-          ];
+          folderUrl = {
+            path: 'event',
+            count: 24,
+          };
 
           this.state = {
             title: 'Event Coverage',
@@ -407,7 +276,7 @@ class WorkPage extends Component {
             {
               id: "0068",
               title: "Renee and Zack",
-              tagline: "Wedding film for Renee and Zack at Porongia Pines, Hamilton. 23/10/2020.",
+              tagline: "Wedding film for Renee and Zack at Porongia Pines, Hamilton.",
               videoItems: [
                 {
                   url: "https://player.vimeo.com/video/494457105",
@@ -418,7 +287,7 @@ class WorkPage extends Component {
             {
               id: "0067",
               title: "Keren and Luke",
-              roleDesc: "Wedding film for Keren and Luke at Maraetai Beach, Auckland. 14/03/2020.",
+              roleDesc: "Wedding film for Keren and Luke at Maraetai Beach, Auckland. ",
               videoItems: [
                 {
                   url: "https://player.vimeo.com/video/408731823",
@@ -429,7 +298,7 @@ class WorkPage extends Component {
             {
               id: "0096",
               title: "Karine and Eroni",
-              roleDesc: "Wedding film for Karine and Eroni at Sorrento in the Park, Auckland. 17/07/2020.",
+              roleDesc: "Wedding film for Karine and Eroni at Sorrento in the Park, Auckland.",
               videoItems: [
                 {
                   url: "https://player.vimeo.com/video/450061309",
@@ -440,7 +309,7 @@ class WorkPage extends Component {
             {
               id: "0100",
               title: "Amberley and Denis",
-              tagline: "Wedding film for Amberley and Denis at Woodside Estate, Hamilton. 14/11/2020.",
+              tagline: "Wedding film for Amberley and Denis at Woodside Estate, Hamilton.",
               videoItems: [
                 {
                   url: "https://player.vimeo.com/video/496366597",
@@ -449,181 +318,39 @@ class WorkPage extends Component {
               ]
             },
           ]
-          folderUrls = [
-            {
-              folderUrl: '0060-wedding',
-              imgUrlHeader: '0060wedding',
-              size: 15
-            },
-            {
-              folderUrl: '0060-weddingbnw',
-              imgUrlHeader: 'weddingbnw',
-              size: 6
-            }
-          ]
+          folderUrl = {
+            path: 'wedding',
+            count: 6,
+          };
 
           this.state = {
             title: 'Wedding Films',
             splashUrl: weddingSplash,
             description:
-            `Weddings are some of the most special events we help with, and that's
-            why we have a special page dedicate to it. Weddings require the maximum levels
-            of care (and time management!) to capture the truly special moments,
-            along with all the details you may end up missing on your big day. Our experience with weddings
-            mean even if you do party a bit too hard, there will be an infinite number of replays where you can watch those special moments back.
-
+            `Weddings hold a special place in our hearts, and that's why we've dedicated an entire page to them. We understand that weddings demand the utmost care and meticulous time management to preserve those precious moments and all the delightful details that can easily slip away on your big day.
+<br /><br />
+            Our extensive wedding experience guarantees that even if you dance the night away, there will always be countless replays to relive those extraordinary moments.
+            We specialize in crafting unique and emotional wedding films that paint a vivid tapestry of emotions, allowing you to reimmerse yourself in the magic.
             <br /><br />
-
-            With our work, we specialise in unique and emotional wedding films that show the full spectrum
-            of emotions – allowing you to relive your moment.
-
-            <br /><br />
-            With COVID-19, we often come across some larger weddings where sometimes there are
-            important family members overseas who may miss out. This is why we also offer
-            wedding livestreaming packages along with our films, and sometimes at discounted rates to make sure guests don't miss out.
-
-            <br /><br />
-            Get in touch with us to see if we can arrange something special for you.
+            Reach out to us, and let's create something truly exceptional together.
             `
           }
 
           break;
-        case "other":
-          videos = [
-            {
-              id: "OE",
-              title: "\"Overexposed\" – Short Film",
-              client: 'International IYSFF 1st Place Winner',
-              tagline:
-                "Overexposed tells a story of a young detective attempting to solve a crime.",
-              roleDesc:
-                `Awarded 2nd place in the New Zealand Regionals, best cinematography, editing and production design.`,
-              credits: ["DP, Second Editor, Colourist"],
-              videoItems: [
-                {
-                  url: "https://player.vimeo.com/video/287790121",
-                  aspect: 1.78
-                }
-              ]
-            },
-            {
-              id: "SunsetBHB",
-              title: "Blockhouse Bay Beach",
-              tagline:
-                `A short nature recount of Blockhouse Bay Beach,
-                capturing the light rays passing through the clouds during sunset,
-                and then again during the day overlooking the fisherman by the bay.`,
-              roleDesc: "",
-              credits: ["Videographer"],
-              videoItems: [
-                {
-                  url: "https://player.vimeo.com/video/373857914",
-                  aspect: 2.35
-                },
-                {
-                  url: "https://player.vimeo.com/video/371062035",
-                  aspect: 2.00
-                }
-              ]
-            },
-            {
-              id: "",
-              title: '"Welcome to Tomorrow"',
-              client: "ATOM 1 Minute Short Film Competition",
-              credits: ["DP", "Editor", "Colourist"],
-              videoItems: [
-                {
-                  url: "https://player.vimeo.com/video/350572609",
-                  aspect: 1.78
-                }
-              ]
-            },
-            {
-              id: "LBL",
-              title: '"Little Blue Light" – Short Film',
-              client: "Show Me Shorts, 2018",
-              tagline: '"Boy gets a menacing text message at night. A blue light flickers."',
-              credits: ["DP, Colourist"],
-              videoItems: [
-                {
-                  url: "https://player.vimeo.com/video/356344596",
-                  aspect: 1.78
-                }
-              ]
-            },
-            {
-              id: "BLUE",
-              title: '"Blue" – Short Film',
-              client: "Experimental, Nature",
-              tagline: 'Short experimental film of people picking blueberries.',
-              videoItems: [
-                {
-                  url: "https://player.vimeo.com/video/435273200",
-                  aspect: 2.35
-                }
-              ]
-            },
-            {
-              id: "TEST",
-              title: 'Personal Tests',
-              tagline:
-                `Here's also a list of random testing footage I've done. Some to test new lenses
-                and judge how well a camera performs in different circumstances... Worth taking a look if you're interested!.`,
-
-              credits: ["Lead Filmmaker"],
-              videoItems: [
-                {
-                  url: "https://player.vimeo.com/video/250533676",
-                  aspect: 1.78
-                },
-                {
-                  tagline: "Fun abstract animation",
-                  url: "https://player.vimeo.com/video/288934810",
-                  aspect: 1.78
-                }
-              ]
-            }
-          ];
-          folderUrls = [
-            {
-              folderUrl: '0068-aucklandeye',
-              imgUrlHeader: 'aucklandeye',
-              size: 2
-            },
-            {
-              folderUrl: 'OTHER-interior',
-              imgUrlHeader: 'interior',
-              size: 2
-            },
-            {
-              folderUrl: 'OTHER-christmaspark',
-              imgUrlHeader: 'christmas',
-              size: 6
-            }
-          ];
-
-          this.state = {
-            title: 'Narrative / Other',
-            splashUrl: otherSplash,
-            description:
-              `
-              Just like with all websites with a limited portfolio space for sharing our creations, we had a
-              really hard time coming up with what to include.
-              On this page are some videos we really couldn't categorize, and
-              also some of our personal work (including narrative short films submitted to festivals).
-              <br /><br />
-              Although some of this might not be relevant to your project, we do always
-              try to add our own 'touch' that make them stand out, unique,
-              and sometimes borderline experimental. To do so, we often draw inspiration from our personal projects.
-              Have a look below, even just for a bit of entertainment.
-              `
-          }
-
-          break;
-
         case "campaign":
 
           videos = [
+            {
+              title: '"The Y" Brand Launch Video',
+              client: 'The Y (Formerly the YMCA)',
+              tagline: "In 2022, the YMCA in New Zealand rebranded to 'The Y'. A strong lauch video was a crucial part of their social media strategy to consolidate this new brand.",
+              videoItems: [
+                {
+                  url: "https://player.vimeo.com/video/780075230",
+                  aspect: 1.78
+                }
+              ]
+            },
             {
               title: '"Fashion for Charity" Launch',
               client: 'Fashion for Charity',
@@ -650,6 +377,25 @@ class WorkPage extends Component {
               ]
             },
             {
+              id: "MCLive",
+              title: 'MC Live Series',
+              client: 'Meryl Cassie Live',
+              tagline: `Partnering with actress, singer and dancer Meryl Cassie in bringing you along
+              to her shenannigans. So far, we've been to HQ to celebrate pride, our up and coming footballers at Unimount and
+              even celebrating Jacinda Ardern's 40th birthday with people on Auckland's streets.`,
+              credits: ['Partner Agency'],
+              videoItems: [
+                {
+                  url: "https://player.vimeo.com/video/435265052",
+                  aspect: 2
+                },
+                {
+                  url: "https://player.vimeo.com/video/438554099",
+                  aspect: 1.78
+                }
+              ]
+            },
+            {
               title: "Lifestyle Merch Promotion",
               client: 'APE Athletics',
               tagline: "APE Athletics announcing their new summer style of lifestyle merchandise.",
@@ -658,20 +404,6 @@ class WorkPage extends Component {
                 {
                   url: "https://player.vimeo.com/video/388950636",
                   aspect: 1.00
-                }
-              ]
-            },
-            {
-              id: "PYBREC2019",
-              title: 'Recruitment Campaign 2019',
-              client: 'Puketāpapa Youth Board',
-              tagline:
-                `The Puketāpapa Youth Board is once again looking for new members to join its team!`,
-              credits: ['Videographer'],
-              videoItems: [
-                {
-                  url: "https://player.vimeo.com/video/378484555",
-                  aspect: 1.78
                 }
               ]
             },
@@ -724,50 +456,13 @@ class WorkPage extends Component {
                   aspect: 1.85
                 }
               ]
-            },
-            {
-              id: "MCLive",
-              title: 'MC Live Series',
-              client: 'Meryl Cassie Live',
-              tagline: `Partnering with actress, singer and dancer Meryl Cassie in bringing you along
-              to her shenannigans. So far, we've been to HQ to celebrate pride, our up and coming footballers at Unimount and
-              even celebrating Jacinda Ardern's 40th birthday with people on Auckland's streets.`,
-              credits: ['Partner Agency'],
-              videoItems: [
-                {
-                  url: "https://player.vimeo.com/video/435265052",
-                  aspect: 2
-                },
-                {
-                  url: "https://player.vimeo.com/video/438554099",
-                  aspect: 1.78
-                }
-              ]
             }
           ]
 
-          folderUrls = [
-            {
-              folderUrl: 'WDCC-hackathon',
-              imgUrlHeader: 'WDCCxSkillsme-',
-              size: 3
-            },
-            {
-              folderUrl: '0069-ape',
-              imgUrlHeader: '0069-ape',
-              size: 5
-            },
-            {
-              folderUrl: '0068-aucklandeye',
-              imgUrlHeader: 'aucklandeye',
-              size: 2
-            },
-            {
-              folderUrl: '0051-monsieurmadame',
-              imgUrlHeader: 'monsieur-madame',
-              size: 16
-            }
-          ];
+          folderUrl = {
+            path: 'campaigns',
+            count: 10,
+          };
 
           this.state = {
             title: 'Campaigns',
@@ -795,15 +490,11 @@ class WorkPage extends Component {
 
       let photos = [];
 
-      for (let i = 0; i < folderUrls.length; i++) {
-        for (let j = 1; j < folderUrls[i].size + 1; j++) {
-          let url = folderUrls[i].folderUrl;
-          let title = folderUrls[i].imgUrlHeader;
+      let folder = process.env.PUBLIC_URL + `/static/portfolio/${folderUrl.path}`;
 
-          let str = process.env.PUBLIC_URL + `/static/portfolio/${url}/${title}${j}.JPG`;
-
-          photos.push(str);
-        }
+      for (let i = 0; i < folderUrl.count; i++) {
+        let url = `${folder}/${i + 1}.JPG`;
+        photos.push(url);
       }
 
       this.state.imageUrls = photos;

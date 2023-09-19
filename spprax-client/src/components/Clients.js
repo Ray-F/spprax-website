@@ -10,15 +10,14 @@ class Clients extends Component {
       'ymca.png',
       'rsm.png',
       'aucklandeye.png',
-      'lynfield_college.png',
+      'lynfield_college.jpeg',
       'airsorted.png',
       'newworld.png',
-      'roskill.png',
+      'saint_kentigern.png',
 
       'apeathletics.png',
       'diabetes_aotearoa.png',
       'gbhq.png',
-      'monsieurmadame.png',
       'slipstream.png',
       'strongman.png',
     ]

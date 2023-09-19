@@ -10,7 +10,6 @@ import portrait from '../../resources/portrait_sml.JPG';
 import serviceCampaign from '../../resources/services/campaign.JPG';
 import serviceProfile from '../../resources/services/profile.JPG';
 import serviceEvent from '../../resources/services/event.JPG';
-import serviceOther from '../../resources/services/other.JPG';
 import serviceWedding from '../../resources/services/wedding.JPG';
 
 
@@ -50,11 +49,6 @@ class HomePage extends Component {
           <div className='content'>
             <h2><i class="fas fa-video h2-icon"></i> Our Mission</h2>
             <p>
-
-              {/* <div id='photo-container'>
-                <img id='director-photo' src={portrait} />
-                <h6><span>-</span><b>Raymond Feng</b><br />Managing Director</h6>
-              </div> */}
               We are a media production studio servicing both corporate and consumer clients through picture, film and live mediums.
               We help highlight the best of amazing events and stories through our experience, our passion, and our promise to deliver.
               <br /><br />
@@ -110,39 +104,28 @@ class HomePage extends Component {
                 <h4><br />Wedding</h4>
               </Link>
             </li>
-            <li onClick={(e) => {window.location.href = './work/wedding'}}>
-              <Link>
-                <img src={serviceOther}/>
-                <h4>Other</h4>
-              </Link>
-            </li>
           </ul>
         </div>
 
         <div id='pipeline' className='section'>
           <div className='content'>
-            <h2><i class="fas fa-calendar-week h2-icon"></i> Our Production Workflow</h2>
+            <h2><i class="fas fa-calendar-week h2-icon"></i> Unlock Your Vision With Our Production Workflow</h2>
 
             <p>
-              Unlike many other agencies or media content creators, we take a holistic
-              approach to showcasing your passion or brand.
-              Instead of specializing in any type of content, we have a solid network of people
-              that work across media disciplines. At the end, we can then bring things together for one cohesive picture.
-              <br /><br />
-              This means if you are just interested in some awesome photography for your brand, we can help.
-              Or if you're looking for full coverage from photos, video production and a professional
-              multi-camera livestream for your next big corporate event, we can help too!
-              <br /><br />
-              At the end of the day, we care about telling your story in the medium most suited for it.
-              No two projects we've worked on in the past have been the same and we always keep this in mind moving forward. <i>All our packages</i> include
-              planning and consultation periods to make sure you're comfortable with the project's scope, and we're all on the same page on deliverables.
+            At Spprax Media, we redefine creativity with our production workflow. Unlike the rest, we don't box your passion or brand into a single medium. Instead, we collaborate seamlessly across media disciplines to craft a unified masterpiece.
+            <br /><br />
+📸 Need stunning photography for your brand? We've got you covered. 🎥 Seeking comprehensive coverage with photos, video production, and a flawless multi-camera livestream for your corporate event? We've got that too!
+<br /><br />
+Our mission is simple: Tell your story in the medium it deserves. Every project is a fresh canvas, tailored to your unique needs. We kickstart every journey with thorough planning and consultations, ensuring alignment on scope and deliverables.
+
+With us, your vision takes center stage. Let's bring it to life, one frame at a time.
             </p>
           </div>
         </div>
 
         <div id='portfolio-cut' className='section'>
           <p>
-            <a href='/#work'>View our Past Work ></a>
+            <a href='/#work'>View our Past Work &gt;</a>
           </p>
         </div>
 
@@ -152,18 +135,12 @@ class HomePage extends Component {
           <img data-aos='fade-left' id='photo-bg' src={photoCam} />
 
           <div className='content'>
-            <h2 data-aos='fade-right'>Photography</h2>
+            <h2 data-aos='fade-right'>Elevate Your Visual Story</h2>
             <p data-aos='fade-right'>
-              At the heart of any content is having good visual features to accompany the story.
-              Stand out above phone snaps to showcase who you are and what you do,
-              without having to compromise on quality.
-              <br /><br />
-              Photos, just like many other perishable goods diminish in quality over time.
-              Being constantly up to date and refreshing your website covers (just like your desktop wallpaper!)
-              is super important in staying relevant and appearing fresh. We can help preserve them for longer.
-              <br /><br />
-              We deliver on events, commercial profiles,
-              portraiture, weddings among many, many other photographic artforms.
+            Great content deserves stunning visuals to complement its narrative. Step away from ordinary phone snaps and let your essence shine through without sacrificing quality.
+In the fast-paced digital world, maintaining fresh and high-quality visuals is vital. Just like changing your desktop wallpaper, regularly updating your website imagery keeps you relevant and vibrant. We're here to help extend the life of your photos.
+<br /><br />
+Our photography services cover a diverse range of art forms, including events, commercial profiles, portraiture, weddings, and more. Let us capture your moments and bring them to life in timeless style.
             </p>
 
             <br />
@@ -182,18 +159,11 @@ class HomePage extends Component {
           <div className='content'>
             <h2 data-aos='fade-left'>Video Production</h2>
             <p data-aos='fade-left'>
-              Sometimes, photos themselves might not be enough to tell your story.
-              With experience in a wide array of shooting styles –
-              from documenting the ongoings of every event,
-              to highlighting the most magical moments in an intimate wedding setting.
-              Establish the mood and immerse your audience with story through cinematic level production.
-              <br /><br />
-              Through our framing and film skillset, we have seen our surpass
-              generic phone videos (with the same idea content), by over 150%.
-              <br /><br />
-              We deliver on event documentary, information campaigns, internal video memos and corporate interview setups.
+            In some instances, photos alone may not capture the essence of your story. Thanks to our framing and film expertise, we've consistently outperformed generic phone videos with identical content by an impressive 150%. We set the mood and immerse your audience in cinematic storytelling.
+<br /><br />
+Our services encompass event documentaries, informative campaigns, internal video memos, and corporate interview setups. Trust us to transform your ideas into captivating visual narratives.
             </p>
-            <br /><br />
+            <br /><br /><br />
             <a data-aos='fade-left' className='btn' href='#contact'>Get a quote</a>
           </div>
         </div>
@@ -205,13 +175,13 @@ class HomePage extends Component {
             <a className='anchor' name='live'></a>
             <h2 data-aos='fade-right'>LIVE<span style={{color: "#D23535"}}>!</span></h2>
             <p data-aos='fade-right'>
-              COVID-19 did and continues to pose a real threat to live events and audience engagement.
-              Livestreaming straight to the web is a growing technology that greatly overcomes this barrier,
-              and Spprax Media can help you take the first real step in running events that are
-              broadcasted live to your audience, even overseas.
+              Livestreaming straight to your viewers for product launches or live events is becoming
+              more and more popular for modern audiences. We can help you take the first real step 
+              in running events that are broadcasted live to your audience anywhere around the world
+              in the highest quality available.
               <br /><br />
               Work with us to get your AGM's delivered to your remote members, your wedding to
-              overseas guests and product launches to reach a larger audience.
+              overseas guests and launch products live.
               Get live engagement analytics and even recordings of your event to share them even further.
               Enquire now to learn how you can utilize this growing opportunity.
             </p>
@@ -222,7 +192,7 @@ class HomePage extends Component {
 
         <div id='portfolio-cut-2' className='section'>
           <p>
-            <a href='/#work'>View our Past Work ></a>
+            <a href='/#work'>View our Past Work &gt;</a>
           </p>
         </div>
 
