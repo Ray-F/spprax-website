@@ -1,6 +1,9 @@
 {
   "name": "spprax-client",
   "version": "0.1.0",
+  "engines" : { 
+    "node" : ">=16.0.0 <17.0.0"
+  },
   "description": "Website for spprax media home page",
   "repository": "git@github.com:Ray-F/spprax-home-new.git",
   "author": "Raymond Feng <rf.raymondfeng@gmail.com>",
