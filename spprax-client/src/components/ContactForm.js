@@ -23,7 +23,7 @@ class ContactForm extends Component {
   sendEmail(payload) {
     if (this.state.name && this.state.email && this.state.desc) {
       if (this.state.email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
-        emailjs.sendForm('smtp_server', 'template_3gofvS9S', payload, 'user_zd9TCp3VWl0xK97AkDjje')
+        emailjs.sendForm('service_g3jxd9g', 'template_3gofvS9S', payload, 'user_zd9TCp3VWl0xK97AkDjje')
           .then((result) => {
             console.log(result.text);
           }, (error) => {
